@@ -1,19 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Quiz</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<h2>Select Topic</h2>
 
-<h2 id="question">Question</h2>
+<select id="topicSelect">
+  <option value="math">Math</option>
+  <option value="iq">IQ Test</option>
+  <option value="gk">General Knowledge</option>
+</select>
 
-<label><input type="radio" name="ans" value="0"><span id="o0"></span></label><br>
-<label><input type="radio" name="ans" value="1"><span id="o1"></span></label><br>
-<label><input type="radio" name="ans" value="2"><span id="o2"></span></label><br>
+<button onclick="startGame()">Start Quiz</button>
+
+<hr>
+
+<h2 id="question"></h2>
+
+<label><input type="radio" name="ans" value="0"> <span id="o0"></span></label><br>
+<label><input type="radio" name="ans" value="1"> <span id="o1"></span></label><br>
+<label><input type="radio" name="ans" value="2"> <span id="o2"></span></label><br>
 
 <button onclick="next()">Next</button>
 
 <script src="script.js"></script>
-</body>
-</html>
